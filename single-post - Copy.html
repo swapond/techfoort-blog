@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nucleus Blog</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .post-hero-header {
+            padding: 3rem 25px;
+            background-color: #f8f9fa;
+            max-width: 1360px;
+            margin: 0px auto;
+            position: relative;
+            background-image: url(assets/image/chips-bag-mockup_258438-23.jpg);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-origin: border-box;
+            background-position: center;
+            background-size: cover;
+            margin-top: -31px;
+        }
+
+        .post-hero-header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(76, 76, 76, 0.43);
+            -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+        }
+
+        .post-hero-header .entry-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            z-index: 11;
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SITE HEADER -->
+    <header class="site-header flex justify-content-between align-center white-space-bottom">
+        <div class="logo-menu flex align-center">
+            <input type="checkbox" name="" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="toggle-icon">
+                <div class="spinner top"></div>
+                <div class="spinner middle"></div>
+                <div class="spinner bottom"></div>
+            </label>
+
+            <div class="site-brand">
+                <a href="#">Nucleus Blog</a>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div id="sidebarMenu">
+                <div class="offcanvas-header">
+                    <div class="logo-menu flex align-center">
+                        <input type="checkbox" name="" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="toggle-icon">
+                            <div class="spinner top"></div>
+                            <div class="spinner bottom"></div>
+                        </label>
+
+                        <div class="site-brand sidebar-brand">
+                            <a href="#">Nucleus Blog</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="toggle" id="toggle1">
+                            <a href="#"><label for="toggle1">Category</label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="toggle" id="toggle2">
+                            <a href="#"><label for="toggle2">Demo</label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="toggle" id="toggle3">
+                            <a href="#"><label for="toggle3">Demo</label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- #SIDEBAR -->
+        </div>
+
+        <!-- <ul class="main-menu flex link-bold">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> -->
+
+        <div class="flex">
+            <ul class="social-menu flex">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li>|</li>
+            </ul>
+            <ul class="header-switch flex">
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="switch"><i class="fa fa-toggle-off" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- POST BANNER -->
+
+    <section class="post-hero-header">
+        <div class="entry-content">
+            <div id="breadcrumbs" class="breadcrumbs">
+                <span>
+                    <span>
+                        <a href="https://squaretypetheme.com/papercut/">Home</a>
+                        <span class="separator"></span> <strong class="breadcrumb_last" aria-current="page">Sample
+                            Page</strong></span>
+                </span>
+            </div>
+
+            <div class="category-meta">
+                <a href="#" class="flex align-center">
+                    <span class="category-symble">T</span>
+                    <span class="category-name">tutorial</span>
+                </a>
+            </div>
+
+            <h1 class="entry-title">
+                Learning Web Design Beginner Guide that’s make you a PRO
+            </h1>
+
+            <ul class="author-meta flex ulist">
+                <li>Swapon D.</li>
+                <li>Today</li>
+                <li>2.4k views</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- POST BANNER -->
+
+
+
+    </div>
+    <!-- CONTAINER -->
+    <div class="cs-container">
+        <div class="entry-content-wrap">
+            <div class="entry-content">
+
+                <p>
+                    Are you looking for a best laptop for Web Developemt, Graphics Design or daily driver?
+                    Here I pick some best laptop for you.
+                </p>
+
+                <h2>Dell 2020</h2>
+                <p>Dell is currently the best laptop vendor
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="flex justify-content-around mob-flex-col">
+
+                <div>
+                    <ul class="ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="footertoggle" id="footertoggle1">
+                            <a href="#">
+                                <label for="footertoggle1">
+                                    <h3>Site Links</h3>
+                                </label>
+                            </a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="footertoggle" id="footertoggle2">
+                            <a href="#"><label for="footertoggle2">
+                                    <h3>Site Links</h3>
+                                </label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="footertoggle" id="footertoggle3">
+                            <a href="#"><label for="footertoggle3">
+                                    <h3>Site Links</h3>
+                                </label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-footer flex justify-content-between flex-wrap">
+            <div>&#169; Nucleus Inc.</div>
+            <!-- SOCIAL PROFILES -->
+            <div class="flex">
+                <ul class="social-menu flex ulist">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ee0e973041.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

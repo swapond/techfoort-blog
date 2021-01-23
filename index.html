@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nucleus Blog</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel=" stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- SITE HEADER -->
+    <header class="site-header flex justify-content-between align-center white-space-bottom">
+        <div class="logo-menu flex align-center">
+            <input type="checkbox" name="" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="toggle-icon">
+                <div class="spinner top"></div>
+                <div class="spinner middle"></div>
+                <div class="spinner bottom"></div>
+            </label>
+
+            <div class="site-brand">
+                <a href="#">Nucleus Blog</a>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div id="sidebarMenu">
+                <div class="offcanvas-header">
+                    <div class="logo-menu flex align-center">
+                        <input type="checkbox" name="" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="toggle-icon">
+                            <div class="spinner top"></div>
+                            <div class="spinner bottom"></div>
+                        </label>
+
+                        <div class="site-brand sidebar-brand">
+                            <a href="#">Nucleus Blog</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="toggle" id="toggle1">
+                            <a href="#"><label for="toggle1">Category</label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="toggle" id="toggle2">
+                            <a href="#"><label for="toggle2">Demo</label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="toggle" id="toggle3">
+                            <a href="#"><label for="toggle3">Demo</label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- #SIDEBAR -->
+        </div>
+
+        <!-- <ul class="main-menu flex link-bold">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> -->
+
+        <div class="flex">
+            <ul class="social-menu flex">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li>|</li>
+            </ul>
+            <ul class="header-switch flex">
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="switch"><i class="fa fa-toggle-off" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container flex justify-content-around">
+        <!-- POST -->
+        <div class="post-grid flex flex-wrap">
+            <div class="card-wrapper flex flex-column">
+                <div class="category-meta">
+                    <a href="#" class="inline-flex align-center">
+                        <span class="category-symble">T</span>
+                        <span class="category-name">tutorial</span>
+                    </a>
+                </div>
+
+                <a href="single-post.html">
+                    <div class="thumbnail-wrapper">
+                        <img src="assets/image/thumb-1.jpg" alt="">
+                    </div>
+                </a>
+
+                <div class="post-meta">
+                    <h2>
+                        <a href="single-post.html" rel="bookmark">Feeling hungry? try these food in home!</a>
+                    </h2>
+
+                    <ul class="author-meta flex ulist">
+                        <li>Swapon D.</li>
+                        <li>Today</li>
+                        <li>2.4k views</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et</p>
+                </div>
+            </div>
+
+            <div class="card-wrapper flex flex-column">
+                <div class="category-meta">
+                    <a href="#" class="inline-flex align-center">
+                        <span class="category-symble">T</span>
+                        <span class="category-name">tutorial</span>
+                    </a>
+                </div>
+
+                <a href="single-post.html">
+                    <div class="thumbnail-wrapper">
+                        <img src="assets/image/seo-optimization_24908-55896.jpg" alt="">
+                    </div>
+                </a>
+
+                <div class="post-meta">
+                    <h2><a href="single-post.html" rel="bookmark">Tips to rank your website faster</a></h2>
+
+                    <ul class="author-meta flex ulist">
+                        <li>Swapon D.</li>
+                        <li>Today</li>
+                        <li>2.4k views</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et</p>
+                </div>
+            </div>
+
+            <div class="card-wrapper flex flex-column">
+                <div class="category-meta">
+                    <a href="#" class="inline-flex align-center">
+                        <span class="category-symble">T</span>
+                        <span class="category-name">tutorial</span>
+                    </a>
+                </div>
+
+                <a href="single-post.html">
+                    <div class="thumbnail-wrapper">
+                        <img src="assets/image/thumb-1.jpg" alt="">
+                    </div>
+                </a>
+
+                <div class="post-meta">
+                    <h2><a href="single-post.html" rel="bookmark">Feeling hungry? try these food
+                            in home!</a></h2>
+
+                    <ul class="author-meta flex ulist">
+                        <li>Swapon D.</li>
+
+                        <li>Today</li>
+
+                        <li>2.4k views</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et</p>
+                </div>
+            </div>
+
+            <div class="card-wrapper flex flex-column">
+                <div class="category-meta">
+                    <a href="#" class="inline-flex align-center">
+                        <span class="category-symble">T</span>
+                        <span class="category-name">tutorial</span>
+                    </a>
+                </div>
+
+                <a href="single-post.html">
+                    <div class="thumbnail-wrapper">
+                        <img src="assets/image/high-quality-content-concept-with-team-people-editor-with-paper-document-laptop-books_82472-87.jpg"
+                            alt="">
+                    </div>
+                </a>
+
+                <div class="post-meta">
+                    <h2><a href="single-post.html" rel="bookmark">Become a full-stack Graphics
+                            Designer with this post</a></h2>
+
+                    <ul class="author-meta flex ulist">
+                        <li>Swapon D.</li>
+                        <li>Today</li>
+                        <li>2.4k views</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et</p>
+                </div>
+            </div>
+
+            <div class="card-wrapper flex flex-column">
+                <div class="category-meta">
+                    <a href="#" class="inline-flex align-center">
+                        <span class="category-symble">T</span>
+                        <span class="category-name">tutorial</span>
+                    </a>
+                </div>
+
+                <a href="single-post.html">
+                    <div class="thumbnail-wrapper">
+                        <img src="assets/image/thumb-1.jpg" alt="">
+
+                    </div>
+                </a>
+
+                <div class="post-meta">
+                    <h2><a href="single-post.html" rel="bookmark">Feeling hungry? try these food
+                            in home!</a></h2>
+
+                    <ul class="author-meta flex ulist">
+                        <li>Swapon D.</li>
+
+                        <li>Today</li>
+
+                        <li>2.4k views</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et</p>
+                </div>
+            </div>
+
+            <div class="card-wrapper flex flex-column">
+                <div class="category-meta">
+                    <a href="#" class="inline-flex align-center">
+                        <span class="category-symble">T</span>
+                        <span class="category-name">tutorial</span>
+                    </a>
+                </div>
+
+                <a href="single-post.html">
+                    <div class="thumbnail-wrapper">
+                        <img src="assets/image/infographic-timeline-hand-drawn_23-2148365983.jpg" alt="">
+                    </div>
+                </a>
+
+                <div class="post-meta">
+                    <h2><a href="single-post.html" rel="bookmark">That's design ideas makes you
+                            a PRO!</a></h2>
+
+                    <ul class="author-meta flex ulist">
+                        <li>Swapon D.</li>
+                        <li>Today</li>
+                        <li>2.4k views</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et</p>
+                </div>
+            </div>
+
+            <!-- LOAD MORE BUTTON -->
+            <div class="load-more flex justify-align-center">
+                <button class="btn load-more-btn">Load More</button>
+            </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar flex flex-column">
+            <div class="sidebar-wrapper">
+                <div class="search-box">
+                    <input class="search-txt" type="search" name="" placeholder="What you're looking for?">
+                    <a href="#" class="search-btn">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-wrapper">
+                <div class="widget-title">
+                    <h2>Category</h2>
+                    <div class="widget-content">
+                        <ul class="ulist">
+                            <li><i class="fa fa-search"></i><a href="#">SEO Hacks</a></li>
+                            <li><i class="fas fa-sim-card"></i><a href="#">Tech Review</a></li>
+                            <li><i class="fas fa-code"></i><a href="#">Web Development</a></li>
+                            <li><i class="fas fa-poll"></i><a href="#">Digital Marketing</a></li>
+                            <li><i class="fab fa-app-store-ios"></i><a href="#">Software Review</a></li>
+                            <li><i class="fas fa-bars"></i><a href="#">Uncategories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-wrapper">
+                <div class="widget-title">
+                    <h2>Must Read</h2>
+                    <div class="widget-content">
+                        <div class="post-wrapper flex">
+                            <div class="title-meta flex flex-column">
+                                <b>The cheapest gadget for
+                                    new YouTuber</b>
+
+                                <div class="share">
+                                    <i class="fa fa-share-alt"></i> 625
+                                </div>
+                            </div>
+
+                            <div class="post-thumb-wrapper">
+                                <img src="assets/image/web design.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="post-wrapper flex">
+                            <div class="title-meta flex flex-column">
+                                <b>That's design ideas makes
+                                    you a PRO!</b>
+
+                                <div class="share">
+                                    <i class="fa fa-share-alt"></i> 625
+                                </div>
+                            </div>
+
+                            <div class="post-thumb-wrapper">
+                                <img src="assets/image/infographic-timeline-hand-drawn_23-2148365983.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="post-wrapper flex">
+                            <div class="title-meta flex flex-column">
+                                <b>Feeling hungry? try these
+                                    food in home!</b>
+
+                                <div class="share">
+                                    <i class="fa fa-share-alt"></i> 625
+                                </div>
+                            </div>
+
+                            <div class="post-thumb-wrapper">
+                                <img src="assets/image/seo-optimization_24908-55896.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="post-wrapper flex">
+                            <div class="title-meta flex flex-column">
+                                <b>Best laptop for web
+                                    developers</b>
+
+                                <div class="share">
+                                    <i class="fa fa-share-alt"></i> 625
+                                </div>
+                            </div>
+
+                            <div class="post-thumb-wrapper">
+                                <img src="assets/image/social-media-killing-friendship-concept-illustrated_52683-24300.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-wrapper">
+                <div class="widget-title">
+                    <h2>Sticky Ads</h2>
+                    <div class="widget-content ad">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid minus consectetur
+                            unde facilis labore sint cumque in similique, dolorem praesentium possimus aspernatur totam
+                            dignissimos sunt laborum quisquam laboriosam harum quod sequi alias temporibus perspiciatis
+                            facere magnam. Corporis, distinctio. Nihil quo placeat, provident blanditiis dicta facilis
+                            quod quos minus nesciunt?</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="flex justify-content-around mob-flex-col">
+
+                <div>
+                    <ul class="ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="footertoggle" id="footertoggle1">
+                            <a href="#">
+                                <label for="footertoggle1">
+                                    <h3>Site Links</h3>
+                                </label>
+                            </a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="footertoggle" id="footertoggle2">
+                            <a href="#"><label for="footertoggle2">
+                                    <h3>Site Links</h3>
+                                </label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="ulist">
+                        <li class="according">
+                            <input type="checkbox" class="according-toggle" name="footertoggle" id="footertoggle3">
+                            <a href="#"><label for="footertoggle3">
+                                    <h3>Site Links</h3>
+                                </label></a>
+                            <ul class="according-content ulist">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">SEO Hacks</a></li>
+                                <li><a href="#">Life Hacks</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-footer flex justify-content-between flex-wrap">
+            <div>&#169; Nucleus Inc.</div>
+            <!-- SOCIAL PROFILES -->
+            <div class="flex">
+                <ul class="social-menu flex ulist">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ee0e973041.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
